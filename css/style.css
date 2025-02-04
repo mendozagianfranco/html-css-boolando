@@ -90,6 +90,12 @@ main {
     margin: 60px 0;
 }
 
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
 main .card .card-top {
     position: relative;
 }
