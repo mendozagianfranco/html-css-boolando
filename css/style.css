@@ -6,12 +6,6 @@
     box-sizing: border-box;
 }
 
-/****  DEBUG ****/
-
-.debug footer {
-    height: 110px;
-}
-
 /**** UTILITIES ****/
 
 .color-1 {
@@ -26,6 +20,11 @@ body {
 
 ul {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .disable {
@@ -163,4 +162,18 @@ footer {
 
 footer .container {
     justify-content: space-between;
+}
+
+footer .container .information .name-company,
+footer .container .social .text {
+    margin-bottom: 20px;
+}
+
+footer .container .information .links-footer ul,
+footer .container .social ul {
+    gap: 10px;
+}
+
+footer .container .social ul {
+    font-size: 20px;
 }
