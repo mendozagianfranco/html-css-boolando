@@ -8,19 +8,6 @@
 
 /****  DEBUG ****/
 
-.debug header {
-    height: 70px;
-}
-
-.debug nav {
-    background-color: blue;
-}
-
-.debug nav > * {
-    border: 1px dashed black;
-    padding: 5px;
-}
-
 .debug main .card {
     height: 700px;
     width: 450px;
@@ -45,10 +32,22 @@
 
 /**** UTILITIES ****/
 
+.color-1 {
+    color: #fff;
+}
+
 /**** COMMON ****/
 
 body {
     font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
 }
 
 .container {
@@ -84,8 +83,20 @@ header {
 }
 
 nav {
-    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu ul {
+    gap: 10px;
+}
+
+nav .logo img {
+    max-height: 30px;
+}
+
+nav .icons-nav > * {
+    padding: 2px;
 }
 
 /**** MAIN ****/
@@ -95,7 +106,6 @@ main {
 }
 
 main .container {
-    display: flex;
     flex-wrap: wrap;
     gap: 35px;
 }
@@ -135,6 +145,5 @@ footer {
 }
 
 footer .container {
-    display: flex;
     justify-content: space-between;
 }
