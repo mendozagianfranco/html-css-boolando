@@ -5,3 +5,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/****  DEBUG ****/
+
+/* .debug header {
+    height: 70px;
+} */
+
+.debug nav {
+    background-color: blue;
+}
+
+.debug nav > * {
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+/**** UTILITIES ****/
+
+/**** COMMON ****/
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/**** HEADER ****/
+
+header {
+    background-color: #ff6900;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
