@@ -8,9 +8,9 @@
 
 /****  DEBUG ****/
 
-/* .debug header {
+.debug header {
     height: 70px;
-} */
+}
 
 .debug nav {
     background-color: blue;
@@ -19,6 +19,24 @@
 .debug nav > * {
     border: 1px dashed black;
     padding: 5px;
+}
+
+.debug main .card {
+    height: 700px;
+    width: 450px;
+}
+
+.debug main .card-top {
+    background-color: pink;
+    height: 650px;
+}
+
+.debug main .card-bottom {
+    background-color: aqua;
+}
+
+.debug .heart {
+    background-color: #fff;
 }
 
 /**** UTILITIES ****/
@@ -34,6 +52,26 @@ body {
     margin: 0 auto;
 }
 
+.status > * {
+    padding: 5px;
+}
+
+.status .flag-offer {
+    background-color: #ff0000;
+}
+
+.status .flag-sustainability {
+    background-color: #008000;
+}
+
+.price .price-current {
+    color: #ff0000;
+}
+
+.price .price-old {
+    text-decoration: line-through;
+}
+
 /**** HEADER ****/
 
 header {
@@ -44,4 +82,36 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+/**** MAIN ****/
+
+main {
+    margin: 60px 0;
+}
+
+main .card .card-top {
+    position: relative;
+}
+
+main .card .card-bottom {
+    margin-top: 5px;
+}
+
+main .card .card-top .heart,
+main .card .card-top .status {
+    position: absolute;
+}
+
+.card-top .heart {
+    top: 10px;
+    right: 0;
+    padding: 15px;
+}
+
+.card-top .status {
+    display: flex;
+    gap: 5px;
+    bottom: 40px;
+    left: 0;
 }
