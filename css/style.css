@@ -8,24 +8,6 @@
 
 /****  DEBUG ****/
 
-.debug main .card {
-    height: 700px;
-    width: 450px;
-}
-
-.debug main .card-top {
-    background-color: pink;
-    height: 650px;
-}
-
-.debug main .card-bottom {
-    background-color: aqua;
-}
-
-.debug .heart {
-    background-color: #fff;
-}
-
 .debug footer {
     height: 110px;
 }
@@ -46,6 +28,10 @@ ul {
     list-style-type: none;
 }
 
+.disable {
+    display: none;
+}
+
 .flex {
     display: flex;
 }
@@ -56,7 +42,8 @@ ul {
 }
 
 .status > * {
-    padding: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
 }
 
 .status .flag-offer {
@@ -73,6 +60,11 @@ ul {
 
 .price .price-old {
     text-decoration: line-through;
+}
+
+.name-product {
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 /**** HEADER ****/
@@ -107,15 +99,36 @@ main {
 
 main .container {
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 35px;
+}
+
+main .container .card {
+    width: calc((100% / 3) - 35px);
+    cursor: pointer;
+}
+
+main .container .heart:hover {
+    color: #ff0000;
 }
 
 main .card .card-top {
     position: relative;
 }
 
-main .card .card-bottom {
-    margin-top: 5px;
+main .card .card-top img {
+    width: 100%;
+}
+
+main .card:hover .card-top .second-img {
+    display: inline-block;
+}
+main .card:hover .card-top .first-img {
+    display: none;
+}
+
+main .card .card-top .heart i {
+    font-size: 20px;
 }
 
 main .card .card-top .heart,
@@ -127,6 +140,7 @@ main .card .card-top .status {
     top: 10px;
     right: 0;
     padding: 15px;
+    background-color: #fff;
 }
 
 .card-top .status {
